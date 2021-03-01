@@ -4,18 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 此处与接口类地址对应 -->
 <mapper namespace="com.yincj.myBatis.mapper.tpMapper">
-    <!-- 此处与接口方法名对应 指定参数类型与返回结果类型-->
 
-    <resultMap id="mapTp" type="com.example.demo.entity.User">
-        <result property="name" column="name" />
-        <result property="password" column="password" />
-        <result property="number" column="number"/>
-
-    </resultMap>
-
-    <select id="getUserById" parameterType="java.util.HashMap" resultType="mapTp">
-        select * from user where id = #{id}
-    </select>
     <insert id="insertTp" parameterType="com.yincj.myBatis.entity.yincjTp">
         insert into yincj_tp(PK_ID,APPL_CDE,TP_NAME,TP_NR,M_TP) values (#pkId#,#applCde#,#tpName#,#tpNr#,#mTp#);
     </insert>

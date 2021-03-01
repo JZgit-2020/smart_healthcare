@@ -2,10 +2,10 @@ package com.yincj.jpa.entity;
 import javax.persistence.*;
 
 public class Users {
-
+/*
     @Entity
     @Table(name="t_users")
-    public class Users {
+
 
         @Id	//主键id
         @GeneratedValue(strategy=GenerationType.IDENTITY)//主键生成策略
@@ -76,6 +76,6 @@ public class Users {
             sb.append('}');
             return sb.toString();
         }
-    }
+    }*/
 
 }
